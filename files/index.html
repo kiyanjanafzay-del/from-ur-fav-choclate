@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Aynaz’s Little Universe</title>
+<meta name="theme-color" content="#080F24">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&family=Playfair+Display:ital@1&family=Vazirmatn:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-p="welcome">
+<canvas id="sky" aria-hidden="true"></canvas>
+<div id="glow" aria-hidden="true"></div>
+<div id="flowers" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="#welcome">Aynaz ✦</a>
+  <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><i></i><i></i></button>
+  <nav id="menu" aria-label="Pages"></nav>
+</header>
+<div class="count" id="count" aria-hidden="true"></div>
+
+<main>
+<!-- 1 WELCOME -->
+<section class="pg" id="welcome" data-t="Welcome">
+  <div class="full center wrap">
+    <div class="moon" aria-hidden="true"></div>
+    <p class="mean">Aynaz means <em>full moon</em>. So I started there.</p>
+    <h1 class="hero">A little place in the universe, made for you.</h1>
+    <p class="lead">I made this slowly, one small thing at a time, for my princess. Nothing in here is loud. Take as long as you like.</p>
+    <span class="line" aria-hidden="true"></span>
+    <a class="btn" href="#home">Come inside</a>
+  </div>
+</section>
+
+<!-- 2 HOME -->
+<section class="pg" id="home" data-t="Home">
+  <div class="wrap full" style="align-content:start;padding-top:8rem">
+    <h1 class="rv">Hi, <em>princess.</em></h1>
+    <p class="lead rv">This isn’t a list of everything you are. That would never fit. It’s a handful of small things I’ve noticed, kept somewhere you can find them.</p>
+    <div class="cards" id="homecards"></div>
+  </div>
+</section>
+
+<!-- 3 THREE REASONS -->
+<section class="pg" id="reasons" data-t="Three Reasons">
+  <div class="prog" id="prog" aria-hidden="true"><b>01</b><span>/ 03</span></div>
+  <article class="chapter c1 full center wrap" data-n="01">
+    <h2 class="rv">01 — Your Eyes</h2>
+    <div class="photo pi rv"><img src="images/eye.jpg" alt="A close-up of her eye" width="1080" height="921" loading="lazy"></div>
+    <p class="body rv">I won’t describe the color. You already know it. What stays with me is how much a single look can carry. It can be over before anyone else notices, and somehow it’s the part that lingers.</p>
+    <p class="body rv">That’s one of them. I won’t explain it. You’ll know the look.</p>
+  </article>
+  <article class="chapter c2 full center wrap" data-n="02">
+    <h2 class="rv">02 — Your Kindness</h2>
+    <p class="body rv">Kindness isn’t the same as being nice. Nice is easy and public. What I mean is quieter: the things done without waiting to be thanked, and what they say about someone’s character.</p>
+    <p class="body rv">You’d call it nothing. I keep a very different tally.</p>
+  </article>
+  <article class="chapter c3 full center wrap" data-n="03">
+    <svg class="const" viewBox="0 0 400 220" aria-hidden="true"><polyline id="cpath" points="20,170 90,110 160,140 230,60 300,100 380,30" fill="none" stroke="#789ACB" stroke-width="1" pathLength="1"/><g fill="#E8EAF5"><circle cx="20" cy="170" r="3"/><circle cx="90" cy="110" r="3"/><circle cx="160" cy="140" r="3"/><circle cx="230" cy="60" r="3"/><circle cx="300" cy="100" r="3"/><circle cx="380" cy="30" r="3"/></g></svg>
+    <h2 class="rv">03 — You Thought Only Three?</h2>
+    <p class="body rv">I said three because three fits on a page. The first two were only where I started. The third is just you, in the ordinary hours, not performing anything. The list doesn’t end, because there are too many small things to count.</p>
+    <p class="body big rv"><em>You never have to become anyone else to be worth appreciating.</em></p>
+    <a class="btn rv" href="#beauty">There is more to you than three reasons.</a>
+  </article>
+</section>
+
+<!-- 4 HER BEAUTY -->
+<section class="pg" id="beauty" data-t="Her Beauty">
+  <div class="wrap full center">
+    <h1 class="rv">The Details That Make You, You.</h1>
+    <p class="lead rv">Beauty isn’t only something people see. A lot of it is something they notice, slowly, in how someone is.</p>
+  </div>
+  <div class="wrap split sec">
+    <div class="photo tall pi rv"><img src="images/selfie.jpg" alt="Aynaz" width="640" height="640" loading="lazy"></div>
+    <div><h2 class="rv">The way you look</h2>
+      <p class="body rv">Appearance is only what anyone sees first. It matters, and it’s the smaller part of the story. Purple suits you, by the way. It’s why this whole place leans that way.</p>
+      <p class="body rv">Your eyes first, which is why they got a whole chapter. Then the smile. Then the pout, which I’m not supposed to admit I love.</p></div>
+  </div>
+  <div class="wrap sec">
+    <h2 class="rv">The person behind it</h2>
+    <p class="body rv">Her look and her personality don’t feel like two separate things. The way you think, the way a plain conversation turns interesting once you’re in it, the way you say things in a way nobody else would. It all reads as one person.</p>
+    <p class="body rv">You can be an airhead, and it’s charming. You can be sharp, and it’s fast. You can be jealous, and you’re terrible at hiding it. Same person every time, and every version is the one I’d pick.</p>
+  </div>
+  <div class="wrap sec">
+    <h2 class="rv">The little things</h2>
+    <div class="cards" id="littles"></div>
+  </div>
+  <div class="wrap sec">
+    <h2 class="rv">More than a pretty face</h2>
+    <p class="body rv">If every photo of you vanished, almost nothing I’ve written here would change. You’re worth appreciating because of how you pay attention, how you treat people, and how you’re imperfect in a way that makes you easier to love. That was never the part that needed fixing.</p>
+  </div>
+  <div class="full center wrap">
+    <h2 class="rv">There’s more to you than one page can hold.</h2>
+    <a class="btn rv" href="#memories">Keep going</a>
+  </div>
+</section>
+
+<!-- 5 MEMORIES -->
+<section class="pg" id="memories" data-t="Memories">
+  <div class="wrap full center">
+    <p class="lead rv">It started on 9 August 2024.</p>
+    <h1 class="rv"><span id="days">0</span> days</h1>
+    <p class="lead rv">and counting. Scroll slowly. I put them in order.</p>
+  </div>
+  <div class="story" id="story"><i class="thread" aria-hidden="true"></i></div>
+  <div class="wrap sec">
+    <h2 class="rv">More moments</h2>
+    <p class="lead rv">A few pictures, and the notes that go with them. Tap one to open it.</p>
+    <div class="gallery" id="gallery"></div>
+  </div>
+  <div class="lightbox" id="lb" hidden role="dialog" aria-modal="true"><button class="btn x" id="lbx">Close</button><div class="lbc"><div class="photo" id="lbimg"></div><p id="lbcap"></p></div></div>
+</section>
+
+<!-- 6 LETTERS -->
+<section class="pg" id="letters" data-t="Letters">
+  <div class="wrap full" style="align-content:start;padding-top:8rem">
+    <h1 class="rv">Letters for Aynaz</h1>
+    <p class="lead rv">Open them whenever. Not in order, not all at once.</p>
+    <div id="lettersbox"></div>
+  </div>
+</section>
+
+<!-- 7 APPRECIATION -->
+<section class="pg" id="appreciation" data-t="Appreciation">
+  <div class="wrap full" style="align-content:start;padding-top:8rem">
+    <h1 class="rv">Things I appreciate</h1>
+    <p class="lead rv">Tap a card.</p>
+    <div class="cards" id="apbox"></div>
+  </div>
+</section>
+
+<!-- 8 UNIVERSE -->
+<section class="pg" id="universe" data-t="Universe">
+  <div class="uni"><canvas id="uc"></canvas><div class="nogl">Your device can’t show the 3D sky, so here’s a still one.</div></div>
+  <div class="uhead"><h1>Our little universe</h1><p class="lead">Drag to look around. Tap the bright stars.</p></div>
+  <div class="starmsg" id="starmsg" role="status" aria-live="polite"></div>
+</section>
+
+<!-- 9 MIDNIGHT -->
+<section class="pg" id="midnight" data-t="Midnight">
+  <div class="wrap full center">
+    <div class="moon sm" aria-hidden="true"></div>
+    <h1 class="rv">For the quieter hours.</h1>
+    <div id="mid"></div>
+    <div class="song rv"><p class="lead">This one is hers.</p><h2 id="songname"></h2><button class="btn" id="playsong">Play her song</button></div>
+  </div>
+</section>
+
+<!-- 10 FAVORITES -->
+<section class="pg" id="favorites" data-t="Favorites">
+  <div class="wrap full" style="align-content:start;padding-top:8rem">
+    <h1 class="rv">A few things about you</h1>
+    <ul class="favs" id="favs"></ul>
+    <h2 class="rv" style="margin-top:3rem">A small quiz</h2>
+    <div class="quiz" id="quiz"></div>
+  </div>
+</section>
+</main>
+
+<footer class="foot"><a href="#home">Home</a><span id="final"></span></footer>
+
+<div class="player" id="player">
+  <button id="pp" aria-label="Play music">▶</button>
+  <div class="pinfo"><span id="ptitle"></span><div class="bar"><i id="pbar"></i></div></div>
+  <button id="mute" aria-label="Mute">♪</button>
+  <input id="vol" type="range" min="0" max="1" step=".05" value=".6" aria-label="Volume">
+  <audio id="au" preload="none"></audio>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
